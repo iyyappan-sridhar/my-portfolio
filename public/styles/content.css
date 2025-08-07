@@ -1,0 +1,115 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow:scroll; */
+}
+/* .mouse-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center,lightblue,#2c3e50);
+  transition: background-position 0.1s;
+  z-index: -1;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  overflow-y: 150px;
+}
+
+
+header,
+footer {  
+  flex: 0 0 auto;
+}
+
+main {
+  text-align: center;
+  padding: 5vmin;
+  flex: 1 0 auto;
+}
+
+/* h1 {
+  text-align: left;
+  font-size: medium;
+
+
+}
+h2{
+  text-align: center;
+  font-size: medium;
+}
+ h3{
+  text-align: center;
+  font-size: medium;
+} */
+
+p {
+  color: grey;
+  text-align: justify;
+  font-family: sans-serif;
+  
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+form {
+  margin-top: 10px;
+}
+
+.feedback-input {
+  color:white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid black;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 10%;
+  /* background:#3586ff; */
+  border-radius:50px;
+  border: 0; 
+  cursor: pointer;
+  color:black;
+  font-size: 24px;
+  font-family: sans-serif;
+  padding-top: 10px;
+  padding-bottom:10px;
+  font-size: medium;
+  font: bold;
+  /* transition: all 0.3s;
+  margin-top: -30px;
+  font-weight: 700; */
+
+
+}
+[type="submit"]:hover {
+  background: orange;
+}
